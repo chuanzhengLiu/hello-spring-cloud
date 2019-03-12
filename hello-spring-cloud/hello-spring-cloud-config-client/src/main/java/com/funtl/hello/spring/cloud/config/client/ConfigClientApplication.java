@@ -1,4 +1,4 @@
-package main.java;
+package com.funtl.hello.spring.cloud.config.client;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -8,6 +8,6 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 @EnableDiscoveryClient
 public class ConfigClientApplication {
     public static void main(String[] args) {
-        SpringApplication.run(ConfigClientApplication.class,args);
+        SpringApplication.run(ConfigClientApplication.class, args);
     }
 }
