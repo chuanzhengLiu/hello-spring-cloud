@@ -56,8 +56,8 @@ public class LoginFilter extends ZuulFilter {
         RequestContext context = RequestContext.getCurrentContext();
         HttpServletRequest request = context.getRequest();
         logger.info("{} >>> {}", request.getMethod(), request.getRequestURL().toString());
-        //String token = request.getParameter("token");
-        String token = request.getHeader("token");
+        String token = request.getParameter("token");
+        //String token = request.getHeader("token");
         if (token == null) {
             logger.warn("Token is empty");
             context.setSendZuulResponse(false);

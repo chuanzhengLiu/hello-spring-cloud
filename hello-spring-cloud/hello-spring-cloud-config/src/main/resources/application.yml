@@ -7,10 +7,14 @@ spring:
       server:
         git:
           #uri: https://github.com/topsale/spring-cloud-config
-          uri: https://github.com/chuanzhengLiu/spring-cloud-config.git
-          search-paths: respo
-          username:root
-          password:123456
+          #uri: https://github.com/chuanzhengLiu/hello-spring-cloud
+          #search-paths: respo
+          # 仓库地址 如果是gitlab地址后面就要加.get
+          uri: https://github.com/chuanzhengLiu/hello-spring-cloud
+          # 具体的文件夹地址
+          search-paths: /hello-spring-cloud/spring-cloud-config/home
+          username: chuanzhengLiu
+          password: love55235
 
 server:
   port: 8888

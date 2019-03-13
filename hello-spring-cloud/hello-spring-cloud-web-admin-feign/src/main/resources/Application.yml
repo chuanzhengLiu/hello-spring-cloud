@@ -1,21 +1,9 @@
+#默认启动的配置文件
 spring:
-  application:
-    name: hello-spring-cloud-web-admin-feign
-  thymeleaf:
-    cache: false
-    mode: LEGACYHTML5
-    encoding: UTF-8
-    servlet:
-      content-type: text/html
-
-server:
-  port: 8765
-
-feign:
-  hystrix:
-    enabled: true
-
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+  cloud:
+    config:
+      uri: http://localhost:8888
+      #配置文件的名字
+      name: web-admin-feign
+      label: master
+      profile: dev

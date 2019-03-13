@@ -10,8 +10,6 @@ import javax.annotation.Resource;
 
 @RestController
 public class AdminController {
-
-
     @Resource
     private AdminService adminService;
 
