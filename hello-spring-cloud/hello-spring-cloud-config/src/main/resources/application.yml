@@ -14,7 +14,7 @@ spring:
           # 具体的文件夹地址
           search-paths: /hello-spring-cloud/spring-cloud-config/home
           username: chuanzhengLiu
-          password: love55235
+          password: 123456
 
 server:
   port: 8888
